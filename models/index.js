@@ -10,4 +10,12 @@ Project.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-module.exports = { User, Project };
+Comment.belongsTo(User, {
+  foreignKey: 'user_id'
+});
+
+Comment.belongsTo(Project, {
+  foreignKey: 'project_id'
+});
+
+module.exports = { User, Project, Comment };
