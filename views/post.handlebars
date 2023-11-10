@@ -1,18 +1,25 @@
-<div>
-    <div class="text-center">
-        <h2>{{name}}</h2>
-        <p>Created by {{user.name}} on {{format_date date_created}}</p>
+<form id='comment-form'>
+  <div>
+    <div class='text-center'>
+      <h2>{{name}}</h2>
+      <p>Created by {{user.name}} on {{format_date date_created}}</p>
     </div>
     <div>
-        <p>{{description}}</p>
+      <p>{{description}}</p>
     </div>
     <div>
-     <button>Comment</button>
+      <button>Comment</button>
     </div>
-</div>
-<form>
-    <textarea></textarea>
-    <button>Submit</button>
+  </div>
+  <textarea id='commentText'></textarea>
+  <button id='submit'>Submit</button>
 </form>
+{{#if comments.length}}
+  <h2>comments</h2>
+  {{#each comments as |comment|}}
+    <p>{{comment.text}}</p>
+    <p>Created by {{user.name}} on {{ date_created}}</p>
+  {{/each}}
+{{/if}}
 
-<script src="/js/post.js"></script>
+<script src='/js/comment.js'></script>
