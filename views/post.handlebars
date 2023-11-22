@@ -1,25 +1,31 @@
-<form id='comment-form'>
+<form class="pb-5" id='comment-form'>
   <div>
-    <div class='text-center'>
+    <div class='display-flex justify-space-around text-center'>
       <h2>{{name}}</h2>
       <p>Created by {{user.name}} on {{format_date date_created}}</p>
     </div>
-    <div>
+    <div class='text-center pb-5'>
       <p>{{description}}</p>
     </div>
     <div>
-      <button>Comment</button>
+      <h2>Leave a comment: </h2>
     </div>
   </div>
-  <textarea id='commentText'></textarea>
-  <button id='submit'>Submit</button>
+  <div>
+    <textarea class='form-input' id='commentText'></textarea>
+  </div>
+  <button class='btn btn-primary' id='submit'>Submit</button>
 </form>
 {{#if comments.length}}
-  <h2>comments</h2>
-  {{#each comments as |comment|}}
-    <p>{{comment.text}}</p>
-    <p>Created by {{user.name}} on {{ date_created}}</p>
-  {{/each}}
+  <div class="text-center pb-4">
+    <h2>Comments: </h2>
+  </div>
+  <div class='display-flex justify-space-around'>
+    {{#each comments as |comment|}}
+      <p>{{comment.text}}</p>
+      <p>Created by {{user.name}} on {{date_created}}</p>
+    {{/each}}
+  </div>
 {{/if}}
 
 <script src='/js/comment.js'></script>
