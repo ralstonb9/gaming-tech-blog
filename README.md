@@ -14,11 +14,11 @@ This weeks assignment was to create a tech blog of some sort from scratch. the r
 
 ## Screenshot
 
-![MVC Gaming Blog]()
+![MVC Gaming Blog](/images/mvc-gaming-blog.png)
 
 ## Deployed Link
 
-
+https://fierce-garden-98346-52a4d04ab4d2.herokuapp.com/
 
 ## Installation
 
