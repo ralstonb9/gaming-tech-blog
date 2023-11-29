@@ -5,12 +5,12 @@
 This weeks assignment was to create a tech blog of some sort from scratch. the requirements for this tech blog were that it had to have some authorization code so that when someone signs up there information is saved and when they leave and come back they can sign in and see all their previous posts and comments. I also had to make sure that after a user creates a post it is saved and to their profile and displayed to the home page as well. then I needed to add the functionality to comment on posts and to edit or delete said posts or comments.
 
 ## Table of Contents
--[Description](#description)
--[Screenshot](#screenshot)
--[Deployed Link](#deployed-link)
--[Installation](#installation)
--[Usage](#usage)
--[Questions](#questions)
+- [Description](#description)
+- [Screenshot](#screenshot)
+- [Deployed Link](#deployed-link)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Questions](#questions)
 
 ## Screenshot
 
